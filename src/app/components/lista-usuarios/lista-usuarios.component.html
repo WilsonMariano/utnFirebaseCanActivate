@@ -1,0 +1,22 @@
+<h2>Listado de Usuarios</h2>
+<hr>
+<table class="table">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">ID </th>
+            <th scope="col">Foto</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let usuario of listaUsuarios">
+            <th scope="row">{{usuario.id}}</th>
+            <td>
+                <img [src]="usuario.foto" width="50">
+            </td>
+            <td>{{usuario.nombre}}</td>
+            <td>{{usuario.email}}</td>
+        </tr>
+    </tbody>
+</table>

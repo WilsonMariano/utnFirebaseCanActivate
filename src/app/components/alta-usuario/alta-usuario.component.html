@@ -1,0 +1,22 @@
+<h2>Alta</h2>
+<hr>
+<form>
+    <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="nombre" [(ngModel)]="usuario.nombre" name="nombre" autocomplete="off">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" [(ngModel)]="usuario.email" name="email" autocomplete="off">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" [(ngModel)]="usuario.password" name="password" autocomplete="off">
+    </div>
+    <div class="mb-4">
+        <label for="foto" class="form-label">Foto</label>
+        <input class="form-control" type="file" id="foto">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="agregarUsuario()">Agregar</button>
+</form>
