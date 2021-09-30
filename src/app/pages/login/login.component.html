@@ -8,11 +8,12 @@
             <input type="email" class="form-control" id="email" placeholder="name@example.com" [(ngModel)]="usuario.email" name="email">
             <label for="email">Email</label>
           </div>
-          <div class="form-floating mb-4">
+          <div class="form-floating mb-2">
             <input type="password" class="form-control" id="password" placeholder="Password" [(ngModel)]="usuario.password" name="password">
             <label for="password">Password</label>
           </div>
-          <button class="w-100 btn btn-lg btn-primary mb-3" (click)="ingresar()">Ingresar</button>
+          <small class="text-danger" *ngIf="mostrarError">El email o la contraseña son incorrectas</small>
+          <button class="w-100 btn btn-lg btn-primary mt-4" (click)="ingresar()">Ingresar</button>
         </form>
     </section>
 </main>

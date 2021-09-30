@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   public usuario = new Usuario();
+  public mostrarError = false;
 
   constructor(private router: Router) { }
 
